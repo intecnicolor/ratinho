@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> toca do ratinho </title>
+	<meta charset="utf-8">
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="style/estilo.css">
+
+	<!-- fontes google -->
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Short+Stack" rel="stylesheet">
+
+	<!-- fontawesome icones -->
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- ver mobile no chrome -->
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+</head>
+<body>
+
+
+  <header>
+      
+      <nav class="navegacaoPrimaria"> 
+      <ul>
+        <li> <a href="#"> adote!  </a> </li>
+        <li> <a href="#"> quem somos  </a> </li>
+        <li> <a href="contato.html"> contato  </a> </li>
+      </ul>
+
+        <!-- ICONE MENU - SMARTPHONE -->
+        <button class="botao menuHamburger">
+          <i class="fa fa-bars"></i>
+        </button>
+
+      </nav>
+
+  <!-- BANNER COM LOGO -->
+  		<div class="banner">
+  			<a href="index.html"> <img src="images/logo-rato.png"> </a>
+  		 </div>
+
+
+  		<!-- TITULO - TOCA DOS RATINHOS -->
+  		<div class="titulo"> 
+  		<h1> toca dos ratinhos </h1>
+  		</div>
+
+	</header>
+
+    <section id="contato-fundo">
+
+      <div class="container alinharCentro">
+
+        <main class="contato"> 
+
+
+          <div class="contato-titulo">
+          <h1>fala com a gente!?</h1><span class="fa-stack">
+            <i class="botao gostei fa fa-heart fa-stack fa-inverse"></i>
+          </span> 
+          </div>
+
+            <form  id="formSugestoes" action="sugestoes.html">  
+              <div class="form-group">
+                <label for="nome">Nome</label>
+                <input class="formNome" type="text" name="nome" required placeholder="Seu nome completo">
+              </div>
+
+              <div class="form-group">
+                <label for="idade">idade</label>
+                <input class="formIdade" type="email" name="email" required placeholder="sua idade">
+              </div>
+
+              <div class="form-group">
+                <label class="formMensagem" for="mensagem">Mensagem</label>
+                <textarea id="inputSugestao" name="mensagem"
+                          cols="50"
+                          rows="4"
+                          maxlength="100"
+                          required
+                          data-contador-fonte
+                          placeholder="Seu textão, em até 100 caracteres."></textarea>
+                <span id="contador" data-contador-destino>100</span>
+              </div>
+              
+              <div id="divBotaoEnviar">
+              <input class="botao-enviar" type="submit" value="Enviar">
+              </div>
+            </form>
+
+
+    <script src="script/java.js"></script>
+
+      </main>
+
+           <div id="baloesResposta"> 
+              <div class="balao"> 
+              <h3> nome </h3>
+              <span> idade </span>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+              </p>
+              </div>
+              </div>
+
+    </div>
+
+  </section>
+
+
+</body>
+</html>
